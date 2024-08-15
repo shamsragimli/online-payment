@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: e-pul-az-project
+  datasource:
+    url: jdbc:postgresql://localhost:5432/matrix_157
+    username: postgres
+    password: 0085
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+  liquibase:
+    enabled: true
+#     change-log: liquibase/changelog-master.yaml
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rahimova070@gmail.com
+    password: nqqijwurybiebfhf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+
+application:
+  security:
+    jwt:
+      secret-key: Q2hhcmFjdGVyIHNldDogSW4gY2FzZSBvZiB0ZXh0dWFsIGRhdGEsIHRoZSBlbmNvZGluZyBzY2hlbWUgZG9lcyBub3QgY29udGFpbiB0aGUgY2hhcmFjdGVyIHNldCwgc28geW91IGhhdmUgdG8gc3BlY2lmeSB3aGljaCBjaGFyYWN0ZXIgc2V0IHdhcyB1c2VkIGR1cmluZyB0aGUgZW5jb2RpbmcgcHJvY2Vzcy4gSXQgaXMgdXN1YWxseSBVVEYtOCwgYnV0IGNhbiBiZSBtYW55IG90aGVyczsg
+      expiration: 8640000
+
+contact:
+  name: mpay.az
+  email: contact@mpay.az
+  phone: "+994125252030"
+  address: Albert Aqarunov St.7B, AZ1075 Baku, Azerbaijan
